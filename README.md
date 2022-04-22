@@ -1,6 +1,6 @@
 # SAGA for Gedit.
 
-A dark theme for [Gedit](https://wiki.gnome.org/Apps/Gedit).
+A dark theme for Gedit.
 
 ![Screenshot](./screenshot.png)
 
