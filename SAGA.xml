@@ -19,16 +19,14 @@ Gedit theme using the SAGA palette.-->
   <color name="LavenderPink"      value="#ffaecb"/>
   <color name="PaleLavender"  value="#f3ceff"/>
   <color name="Snow"      value="#fff6ff"/>
-  <color name="BrightAsphalt"  value="#25282a"/>
-  <color name="BrightCharcoal"  value="#1b1e20"/>
   <color name="Asphalt"  value="#141719"/>
-  <color name="Charcoal"      value="#0f1214"/>
+  <color name="Charcoal"  value="#0f1214"/>
   <color name="VampireBlack"    value="#0A0D0F"/>
   <color name="Liqourice"     value="#05080a"/>
 
   <!-- Global Settings -->
-  <style name="text"                        foreground="Snow" background = "Charcoal"/>
-  <style name="selection"                   foreground="Snow" background="BrightCharcoal"/>
+  <style name="text"                        foreground="Snow" background = "Liqourice"/>
+  <style name="selection"                   foreground="Snow" background="Asphalt"/>
   <style name="cursor"                      foreground="MistyRose"/>
   <style name="secondary-cursor"            foreground="MistyRose"/>
   <style name="current-line"                background="Asphalt"/>
@@ -47,8 +45,8 @@ Gedit theme using the SAGA palette.-->
   <style name="search-match"                foreground="Snow" background="LavenderPink"/>
 
   <!-- Comments -->
-  <style name="def:comment"                 foreground="BrightAsphalt"/>
-  <style name="def:shebang"                 foreground="BrightAsphalt" bold="true"/>
+  <style name="def:comment"                 foreground="Asphalt"/>
+  <style name="def:shebang"                 foreground="Asphalt" bold="true"/>
   <style name="def:doc-comment-element"     italic="true"/>
 
   <!-- Constants -->
