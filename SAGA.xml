@@ -1,99 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+Gedit theme using the SAGA palette.-->
 
-The MIT License (MIT)
+<style-scheme id="SAGA" _name="SAGA" version="1.0">
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+  <author>Miusaky</author>
+  <_description>A dark theme for Gedit</_description>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+  <!-- Tango Palette -->
+  <color name="MistyRose" value="#ffe1e1"/>
+  <color name="Mauve"     value="#dfbaff"/>
+  <color name="CottonCandy"    value="#ffc2df"/>
+  <color name="PastelPeach"     value="#ffc79b"/>
+  <color name="Blond"    value="#fff6c3"/>
+  <color name="Menthol"     value="#baf7b5"/>
+  <color name="Celeste"      value="#b2fff3"/>
+  <color name="PastelMagenta"  value="#ff9fbc"/>
+  <color name="LavenderPink"      value="#ffaecb"/>
+  <color name="PaleLavender"  value="#f3ceff"/>
+  <color name="Snow"      value="#fff6ff"/>
+  <color name="BrightAsphalt"  value="#25282a"/>
+  <color name="BrightCharcoal"  value="#1b1e20"/>
+  <color name="Asphalt"  value="#141719"/>
+  <color name="Charcoal"      value="#0f1214"/>
+  <color name="VampireBlack"    value="#0A0D0F"/>
+  <color name="Liqourice"     value="#05080a"/>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
+  <!-- Global Settings -->
+  <style name="text"                        foreground="Snow" background = "Charcoal"/>
+  <style name="selection"                   foreground="Snow" background="BrightCharcoal"/>
+  <style name="cursor"                      foreground="MistyRose"/>
+  <style name="secondary-cursor"            foreground="MistyRose"/>
+  <style name="current-line"                background="Asphalt"/>
+  <style name="line-numbers"                foreground="Snow" background="Liqourice"/>
+  <style name="draw-spaces"                 foreground="Snow"/>
+  <style name="background-pattern"          background="VampireBlack"/>
 
-<style-scheme id="SAGA" name="SAGA" version="1.0">
-	<author>Miusaky</author>
-	<_description>A dark theme for Gedit</_description>
+  <!-- Bracket Matching -->
+  <style name="bracket-match"               foreground="Mauve"/>
+  <style name="bracket-mismatch"            foreground="Snow" background="PastelPeach"/>
 
-	<!-- SAGA -->
-	<color name="background" value="#0A0D0F"/>
-	<color name="current-line" value="#0F1214"/>
-	<color name="selection" value="#141719"/>
-	<color name="foreground" value="#FFFCFF"/>
-	<color name="comment" value="#191C1E"/>
-	<color name="BLUE" value="#BFFBF9"/>
-	<color name="GREEN" value="#B4F8C8"/>
-	<color name="YELLOW" value="#FFFFC1"/>
-	<color name="PINK" value="#FFBDCB"/>
-	<color name="PURPLE" value="#D2C5E8"/>
-	<color name="PEACH" value="#F5D0D0"/>
-	<color name="ORANGE" value="#FFDCAC"/>
+  <!-- Right Margin -->
+  <style name="right-margin"                foreground="Snow" background="Liqourice"/>
 
-	<color name="white" value="#FFFCFF"/>
-	<color name="Isabelline" value="#FFF2FF"/>
-	<color name="Eerie Black" value="#141719"/>
+  <!-- Search Matching -->
+  <style name="search-match"                foreground="Snow" background="LavenderPink"/>
 
-	<style name="text" foreground="Isabelline" background="background"/>
-	<style name="selection" background="selection"/>
-	<style name="cursor" foreground="white" background="white"/>
-	<style name="current-line" foreground="current-line" background="current-line"/>
-	<style name="line-numbers" foreground="Eerie Black" background="background"/>
-	<style name="bracket-match" foreground="Isabelline" background="background" underline="true"/>
-	<style name="search-match" foreground="selection" background="ORANGE"/>
-        <style name="background-pattern" background="#101519"/>
+  <!-- Comments -->
+  <style name="def:comment"                 foreground="BrightAsphalt"/>
+  <style name="def:shebang"                 foreground="BrightAsphalt" bold="true"/>
+  <style name="def:doc-comment-element"     italic="true"/>
 
+  <!-- Constants -->
+  <style name="def:constant"                foreground="Menthol"/>
+  <style name="def:string"                  foreground="Menthol"/>
+  <style name="def:special-char"            foreground="PaleLavender"/>
+  <style name="def:special-constant"        foreground="PaleLavender"/>
+  <style name="def:floating-point"          foreground="PaleLavender"/>
 
-	<style name="def:function" foreground="GREEN"/>
-	<style name="def:identifier" foreground="PINK"/>
-	<style name="def:keyword" foreground="PINK"/>
-	<style name="def:number" foreground="PURPLE" />
-	<style name="def:boolean" foreground="PURPLE"/>
-	<style name="def:string" foreground="ORANGE"/>
-	<style name="def:special-char" foreground="PINK"/>
-	<style name="def:builtin" foreground="BLUE"/>
-	<style name="def:type" foreground="GREEN"/>
-	<style name="def:preprocessor" foreground="GREEN"/>
-	<style name="def:comment" foreground="comment"/>
+  <!-- Identifiers -->
+  <style name="def:identifier"              foreground="LavenderPink"/>
 
-	<!-- Python-specific stuff -->
-	<style name="python:module-handler" foreground="PINK"/>
-	<style name="python:function-name" foreground="GREEN"/>
-	<style name="python:decorator" foreground="GREEN"/>
-	<style name="python:class-name" foreground="white"/>
-	<style name="python:special-variable" foreground="BLUE"/>
-	<style name="python:builtin-constant" foreground="PURPLE"/>
+  <!-- Statements -->
+  <style name="def:statement"               foreground="PastelMagenta" bold="true"/>
 
+  <!-- Types -->
+  <style name="def:type"                    foreground="CottonCandy" bold="true"/>
 
-	<style name="def:specials" foreground="#FAF8F6"/>
-	<style name="def:statement" foreground="PINK"/>
+  <!-- Markup -->
+  <style name="def:emphasis"                italic="true"/>
+  <style name="def:strong-emphasis"         foreground="Blond" bold="true"/>
+  <style name="def:inline-code"             foreground="Menthol"/>
+  <style name="def:insertion"               underline="single"/>
+  <style name="def:deletion"                strikethrough="true"/>
+  <style name="def:link-text"               foreground="MistyRose"/>
+  <style name="def:link-symbol"             foreground="LavenderPink" bold="true"/>
+  <style name="def:link-destination"        foreground="LavenderPink" italic="true" underline="single"/>
+  <style name="def:heading"                 foreground="Celeste" bold="true"/>
+  <style name="def:thematic-break"          foreground="Menthol" bold="true"/>
+  <style name="def:preformatted-section"    foreground="Menthol"/>
+  <style name="def:list-marker"             foreground="Celeste" bold="true"/>
 
-	<style background="#B4F8C8" bold="true" foreground="#FAF8F6" name="diff:added-line"/>
-	<style foreground="#FF9E99" name="diff:removed-line"/>
-	<style background="#0A0D0F" foreground="#FAF8F6" name="diff:changed-line"/>
-
-        <!-- Markup -->
-        <style name="def:emphasis"                italic="true"/>
-        <style name="def:strong-emphasis"         foreground="PURPLE" bold="true"/>
-        <style name="def:inline-code"             foreground="BLUE"/>
-        <style name="def:insertion"               underline="single"/>
-        <style name="def:deletion"                foreground="PEACH" strikethrough="true"/>
-        <style name="def:link-text"               foreground="YELLOW"/>
-        <style name="def:link-symbol"             foreground="YELLOW" bold="true"/>
-        <style name="def:link-destination"        foreground="PINK" italic="true" underline="single"/>
-        <style name="def:heading"                 foreground="GREEN" bold="true"/>
-        <style name="def:thematic-break"          foreground="GREEN" bold="true"/>
-        <style name="def:preformatted-section"    foreground="BLUE"/>
-        <style name="def:list-marker"             foreground="PURPLE" bold="true"/>
-
+  <!-- Others -->
+  <style name="def:preprocessor"            foreground="Celeste"/>
+  <style name="def:error"                   foreground="CottonCandy" bold="true"/>
+  <style name="def:warning"                 foreground="PastelPeach"/>
+  <style name="def:note"                    foreground="LavenderPink" bold="true"/>
+  <style name="def:net-address"             italic="true" underline="single"/>
 </style-scheme>
